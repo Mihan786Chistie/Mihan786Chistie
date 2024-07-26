@@ -1,1 +1,1 @@
-
+![](https://preview.redd.it/2qhok2bdoiy41.jpg?width=216&crop=smart&auto=webp&s=71d5306ce67d1a213fcbccc38982fbe773cf729c)

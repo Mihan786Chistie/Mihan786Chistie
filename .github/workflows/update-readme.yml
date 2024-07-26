@@ -1,0 +1,28 @@
+name: Update README with Meme
+'on':
+  schedule:
+    - cron: 0 0 * * *
+  push:
+    branches:
+      - main
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+      - name: Install dependencies
+        run: pip install requests
+      - name: Update README
+        run: python meme.py
+      - name: Commit changes
+        run: |
+          git config --local user.email "tubbachistie@gmail.com"
+          git config --local user.name "Syed Md Mihan Chistie"
+          git add README.md
+          git commit -m "Update README with new meme"
+          git push
