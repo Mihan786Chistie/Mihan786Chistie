@@ -4,15 +4,15 @@ import re
 # Fetch a random meme URL from an API
 response = requests.get("https://meme-api.com/gimme/programmerhumour")
 data = response.json()
-meme_url = data['preview'][4]
+try:
+    meme_url = data['preview'][3]
+except:
+    meme_url = data['preview'][2]
+finally:
+    meme_url = data['preview'][1]
 
-# Read the README.md file
-with open("README.md", "r") as file:
-    readme_content = file.read()
+print(meme_url)
 
-# Update the meme URL in README.md
-updated_content = re.sub(r'!\[]\(.*\)', f'![]({meme_url})', readme_content)
+f = open("README.md", "w")
 
-# Write the updated content back to README.md
-with open("README.md", "w") as file:
-    file.write(updated_content)
+f.write(f"![]({meme_url})\n\n Memes from [r/programmerhumour](https://www.reddit.com/r/programmerhumour/?onetap_auto=true&one_tap=true)\n")
