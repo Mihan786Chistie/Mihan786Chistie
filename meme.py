@@ -6,7 +6,7 @@ def request_meme():
         try:
             response = requests.get("https://meme-api.com/gimme/ProgrammerHumor")
             data = response.json()
-            meme_url = data['preview'][3]
+            meme_url = data['preview'][3] if len(data['preview']) > 3 else data['preview'][2]
             return meme_url
         except:
             pass
