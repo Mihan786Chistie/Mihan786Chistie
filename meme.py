@@ -15,4 +15,4 @@ meme_url = request_meme()
 
 f = open("README.md", "w")
 
-f.write(f"![]({meme_url})\n\n Memes from [r/programmerhumour](https://www.reddit.com/r/ProgrammerHumor/)\n")
+f.write(f"![]({meme_url})\n\n Random memes from [r/ProgrammerHumor](https://www.reddit.com/r/ProgrammerHumor/)\n")
