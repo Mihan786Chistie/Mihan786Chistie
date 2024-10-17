@@ -1,3 +1,3 @@
-![](https://preview.redd.it/godckytvjzud1.png?width=640&crop=smart&auto=webp&s=693be6bfb0b5069eed76393dd32d13c78867ab3c)
+![](https://preview.redd.it/evluykxgfmud1.png?width=640&crop=smart&auto=webp&s=c409b1a278f570d59551ae08d1b08d60c874c86b)
 
  Random memes from [r/ProgrammerHumor](https://www.reddit.com/r/ProgrammerHumor/)
